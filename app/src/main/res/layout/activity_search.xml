@@ -26,9 +26,11 @@
                     android:layout_height="wrap_content"
                     android:textSize="13dp"
                     android:text="Firma Adı ya da Kategoriye arama yapınız" />
-                <SearchView
+                <EditText
+                    android:id="@+id/textSearch"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:singleLine="true"/>
             </LinearLayout>
 
             <RelativeLayout
@@ -39,7 +41,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/btnSearch"
                     android:paddingLeft="70dp"
                     android:paddingRight="70dp"
                     android:layout_marginTop="8dp"

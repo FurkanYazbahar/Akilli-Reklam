@@ -76,12 +76,12 @@ public class LocationActivity extends AppCompatActivity implements
 
 
                 String s = mLastLocation.getLatitude()+","+mLastLocation.getLongitude();
-                Log.d("ATKAFASI", "/// "+s);
+                //Log.d("ATKAFASI", "/// "+s);
                 Intent i = new Intent(getApplicationContext(), SearchActivity.class);
                 i.putExtra("send_string",s);
-                Log.d("ATKAFASI", "///btnOTO 1");
+
                 startActivity(i);
-                Log.d("ATKAFASI", "///btnOTO 2");
+
             }
         });
 
@@ -131,10 +131,10 @@ public class LocationActivity extends AppCompatActivity implements
                     mGoogleApiClient);
                 //Log.d("ATKAFASI", "///1");
                 if (mLastLocation != null) {
-                 //   Log.d("ATKAFASI", "///");
+
                 //lattitude.append("Latitude : "+ mLastLocation.getLatitude());
                 //longitude.append("Longitude : "+ mLastLocation.getLongitude());
-                    //Log.d("MAMUT", "///"+mLastLocation.getLatitude()+"///"+mLastLocation.getLongitude());
+
                 }
             } catch (SecurityException e) {}
         }

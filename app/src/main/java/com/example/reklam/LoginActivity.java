@@ -57,10 +57,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String addMail = userName.getText().toString()+"@gmail.com";
-                //if(isEmpyt()) return;
+                if(isEmpyt()) return;
                 inProgress(true);
                 // Burasını tekrar düzelt  addMail,pass.getText().toString()
-                auth.signInWithEmailAndPassword("furkan@gmail.com","123456")
+                auth.signInWithEmailAndPassword(addMail,pass.getText().toString())
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
