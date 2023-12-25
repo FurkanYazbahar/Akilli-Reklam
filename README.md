@@ -1,1 +1,1 @@
-# Ak-ll-Reklam
+# Akıllı Reklam
